@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+html {
+  margin: 0;
+  font-size: 18px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+  outline: none;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background: #252830;
+  padding: 15px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  color: #fff;
+  margin-left: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error {
+  width: 200px;
+}
+
+.small-text {
+  font-size: 17px;
+  color: #18121E;
+  padding: 20px;
+  border-bottom: 1px solid rgb(163, 163, 163);
+}
+
+.card {
+  display: inline-block;
+  text-align: center;
+  margin: 20px 10px 40px 40px;
+  border-radius: 15px;
+}
+
+.card p {
+  margin: 5px auto;
+  width: 215px;
+  height: 20px;
+}
+
+.card-img {
+  height: 400px;
+  width: 100%;
+  box-shadow: 0 20px 20px #233237;
+  border-radius: 15px;
+}
+
+.card-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.card-img:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 5px #984B43;
+  transition: .2s;
+}
+
+.loader {
+  margin: 50px auto;
+}
+
+.bar {
+  display: flex;
+  background: #fafafa;
+  transition: all 0.3s;
+  position: sticky;
+  top: 20;
+  z-index: 10;
+  width: 200px;
+
+}
+
+.search-bar input {
+  margin: 10px;
+  flex: 1;
+  font-size: 18px;
+  padding: 10px;
+  padding-left: 0;
+  background-color: rgb(199, 199, 199);
+  width: 200px;
+}
+.select{
+  margin:  10px;
+  width: 200px;
+  font-size: 17px;
+  background-color: rgb(199, 199, 199);
+  border: 1px solid black;
 }
